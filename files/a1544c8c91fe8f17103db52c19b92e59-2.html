@@ -9,7 +9,7 @@
 		
 	<title>Retrieve SQL data in LiveCode | blog | stam66's stuff</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-	<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/eclipse/consolidated.css?rwcache=747343265" />
+	<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/eclipse/consolidated.css?rwcache=747343458" />
 		
 	
 	
@@ -83,7 +83,7 @@
 						<div id="contentWrapper">
 								
 	<div class="blog-archive-entries-wrapper">
-		<div id="unique-entry-id-2" class="blog-entry"><h1 class="blog-entry-title">Retrieve SQL data in LiveCode</h1><div class="blog-entry-date">05/09/24 18:27 </div><div class="blog-entry-body">When you connect to the database, you receive a <strong>connection ID</strong> (a number - if not a number then contains error information) that you can use to read data from the database or manipulate the data stored therein.<br /><br />There are two functions for getting information out of the database:<br /><br />1. The first function is <strong>revDataFromQuery</strong>, which returns a single variable, with the selected fields of the records that fit the criteria in your SQL query in <strong>TSV text format</strong>.<br />Example:<br /><code>put "SELECT cust_id,cust_name FROM Customers" into tQueryput revDataFromQuery(return,tab,tConnectionID,tQuery) into tDataput tData into field "Table Field"</code><br /><br />Returns a return and tab-delimited list like this:<br /><blockquote><p>000001 [ TAB ]  Jane Doe  [END OF LINE]<br>000002 [ TAB ]  Jeff Doe     [END OF LINE]<br>000003 [ TAB ]  John Doe  [END OF LINE]<br></p></blockquote><br />This function is great if you're looking to display some data easily and quickly. But it would be hard to parse out individual fields, and that's where the next function comes to play.<br /><br /><br />2. The second function is <strong>revQueryDatabase</strong>, which executes the query and returns a <strong>cursor ID</strong> - this doesn't contain the data itself, it's an integer that points to a <em>database cursor</em> ,which itself is a collection of pointers to the records in the database that fulfil the SQL query's requirements.<br /><br />You can think of this as navigating cards in a stack where the stack is identified as the cursor ID.<br /><br />To determine how many records there are and which is the current one<br /><code>revNumberOfRecords(<cursor id>)revCurrentRecord(<cursor id>)</code><br /><br /><br />To navigate the records in the result set, you use the commands:<br /><code>revMoveToFirstRecord <cursor id>revMoveToPreviousRecord <cursor id>revMoveToNextRecord <cursor id>revMoveToLastRecord <cursor id></code><br /><br />To determine what fields are in those records, you use:<br /><code>revDatabaseColumnCount(<cursor id>)revDatabaseColumnNames(<cursor id>)</code><br /><br />To fetch the individual fields of the current record, you use:<br /><code>revDatabaseColumnNumbered(<cursor id>,<column number>)revDatabaseColumnNamed(<cursor id>,<column name>)</code><br /><br />To release the result set from memory, you use:<br /><code>revCloseCursor <cursor id></code><p class="blog-entry-tags">Tags: <a href="tag-livecode.html" title="LiveCode" rel="tag">LiveCode</a>, <a href="tag-sql.html" title="SQL" rel="tag">SQL</a></p></div></div>
+		<div id="unique-entry-id-2" class="blog-entry"><h1 class="blog-entry-title">Retrieve SQL data in LiveCode</h1><div class="blog-entry-date">05/09/24 18:27 Filed in: <span class="blog-entry-category"><a href="category-tutorial.html">Tutorial</a></span></div><div class="blog-entry-body">When you connect to the database, you receive a <strong>connection ID</strong> (a number - if not a number then contains error information) that you can use to read data from the database or manipulate the data stored therein.<br /><br />There are two functions for getting information out of the database:<br /><br />1. The first function is <strong>revDataFromQuery</strong>, which returns a single variable, with the selected fields of the records that fit the criteria in your SQL query in <strong>TSV text format</strong>.<br />Example:<br /><code>put "SELECT cust_id,cust_name FROM Customers" into tQueryput revDataFromQuery(return,tab,tConnectionID,tQuery) into tDataput tData into field "Table Field"</code><br /><br />Returns a return and tab-delimited list like this:<br /><blockquote><p>000001 [ TAB ]  Jane Doe  [END OF LINE]<br>000002 [ TAB ]  Jeff Doe     [END OF LINE]<br>000003 [ TAB ]  John Doe  [END OF LINE]<br></p></blockquote><br />This function is great if you're looking to display some data easily and quickly. But it would be hard to parse out individual fields, and that's where the next function comes to play.<br /><br /><br />2. The second function is <strong>revQueryDatabase</strong>, which executes the query and returns a <strong>cursor ID</strong> - this doesn't contain the data itself, it's an integer that points to a <em>database cursor</em> ,which itself is a collection of pointers to the records in the database that fulfil the SQL query's requirements.<br /><br />You can think of this as navigating cards in a stack where the stack is identified as the cursor ID.<br /><br />To determine how many records there are and which is the current one<br /><code>revNumberOfRecords(<cursor id>)revCurrentRecord(<cursor id>)</code><br /><br /><br />To navigate the records in the result set, you use the commands:<br /><code>revMoveToFirstRecord <cursor id>revMoveToPreviousRecord <cursor id>revMoveToNextRecord <cursor id>revMoveToLastRecord <cursor id></code><br /><br />To determine what fields are in those records, you use:<br /><code>revDatabaseColumnCount(<cursor id>)revDatabaseColumnNames(<cursor id>)</code><br /><br />To fetch the individual fields of the current record, you use:<br /><code>revDatabaseColumnNumbered(<cursor id>,<column number>)revDatabaseColumnNamed(<cursor id>,<column name>)</code><br /><br />To release the result set from memory, you use:<br /><code>revCloseCursor <cursor id></code><p class="blog-entry-tags">Tags: <a href="tag-livecode.html" title="LiveCode" rel="tag">LiveCode</a>, <a href="tag-sql.html" title="SQL" rel="tag">SQL</a></p></div></div>
 	</div>
 	
 
@@ -100,7 +100,7 @@
 							</div>
 							<div id="sidebarContent">
 								<div id="sidebar"></div>
-								<div id="pluginSidebar"><div id="blog-categories"><a href="category-coding.html" class="blog-category-link-enabled">Coding (1)</a><br /></div><div id="blog-archives"><a class="blog-archive-link-enabled" href="archive-september-2024.html">September 2024</a><br /></div><ul class="blog-tag-cloud"><li><a href="tag-livecode.html" title="LiveCode" class="blog-tag-size-11" rel="tag">LiveCode</a></li>
+								<div id="pluginSidebar"><div id="blog-categories"><a href="category-ide.html" class="blog-category-link-enabled">IDE (1)</a><br /><a href="category-tutorial.html" class="blog-category-link-enabled">Tutorial (1)</a><br /></div><div id="blog-archives"><a class="blog-archive-link-enabled" href="archive-september-2024.html">September 2024</a><br /></div><ul class="blog-tag-cloud"><li><a href="tag-livecode.html" title="LiveCode" class="blog-tag-size-11" rel="tag">LiveCode</a></li>
 <li><a href="tag-livecode-ide.html" title="LiveCode IDE" class="blog-tag-size-10" rel="tag">LiveCode IDE</a></li>
 <li><a href="tag-sql.html" title="SQL" class="blog-tag-size-9" rel="tag">SQL</a></li>
 </ul>
@@ -132,10 +132,10 @@
 			</main>
 		</div>
 	</div>
-	<script src="../rw_common/themes/eclipse/javascript.js?rwcache=747343265"></script>
-	<script src="../rw_common/themes/eclipse/scripts/jquery-3.6.0.min.js?rwcache=747343265"></script>
-	<script src="../rw_common/themes/eclipse/scripts/scripts.js?rwcache=747343265"></script>
-	<script src="../rw_common/themes/eclipse/custom.js?rwcache=747343265"></script>
+	<script src="../rw_common/themes/eclipse/javascript.js?rwcache=747343458"></script>
+	<script src="../rw_common/themes/eclipse/scripts/jquery-3.6.0.min.js?rwcache=747343458"></script>
+	<script src="../rw_common/themes/eclipse/scripts/scripts.js?rwcache=747343458"></script>
+	<script src="../rw_common/themes/eclipse/custom.js?rwcache=747343458"></script>
 	
 </body>
 

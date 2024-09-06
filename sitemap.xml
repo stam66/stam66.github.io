@@ -2,11 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://stam66.github.io/index.html</loc>
+		<lastmod>2024-09-06</lastmod>
+	</url>
+	<url>
+		<loc>https://stam66.github.io/files/a1544c8c91fe8f17103db52c19b92e59-2.html</loc>
+		<lastmod>2024-09-06</lastmod>
+	</url>
+	<url>
+		<loc>https://stam66.github.io/files/6bf6cc344fa19c222788b6832c874efb-1.html</loc>
+		<lastmod>2024-09-06</lastmod>
+	</url>
+	<url>
+		<loc>https://stam66.github.io/files/225a73063efd967522469d5d72fbee15-0.html</loc>
+		<lastmod>2024-09-06</lastmod>
+	</url>
+	<url>
+		<loc>https://stam66.github.io/files/archive-september-2024.html</loc>
+		<lastmod>2024-09-06</lastmod>
+	</url>
+	<url>
+		<loc>https://stam66.github.io/files/category-tutorial.html</loc>
+		<lastmod>2024-09-06</lastmod>
+	</url>
+	<url>
+		<loc>https://stam66.github.io/files/category-ide.html</loc>
+		<lastmod>2024-09-06</lastmod>
+	</url>
+	<url>
+		<loc>https://stam66.github.io/files/tag-livecode.html</loc>
+		<lastmod>2024-09-06</lastmod>
+	</url>
+	<url>
+		<loc>https://stam66.github.io/files/tag-livecode-ide.html</loc>
+		<lastmod>2024-09-06</lastmod>
+	</url>
+	<url>
+		<loc>https://stam66.github.io/files/tag-sql.html</loc>
+		<lastmod>2024-09-06</lastmod>
 	</url>
 	<url>
 		<loc>https://stam66.github.io/markdown/index.html</loc>
+		<lastmod>2024-09-06</lastmod>
 	</url>
 	<url>
 		<loc>https://stam66.github.io/contact-form/index.php</loc>
+		<lastmod>2024-09-06</lastmod>
 	</url>
 </urlset>
