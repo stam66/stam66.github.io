@@ -51,7 +51,7 @@
 		
 	<title>contact | stam66's stuff</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-	<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/eclipse/consolidated.css?rwcache=747343638" />
+	<link rel="stylesheet" type="text/css" media="all" href="../rw_common/themes/eclipse/consolidated.css?rwcache=747343721" />
 		
 	
 	
@@ -94,7 +94,7 @@
 									<div id="mobileToggleLabel"></div>
 								</div>
 								<nav id="mainNav" class="menu-closed">
-									<ul class="toolbarList"><li class="normalListItem"><a href="../" rel="" class="normal">blog</a></li><li class="normalListItem"><a href="../markdown/" rel="" class="normal">about</a></li><li class="currentListItem"><a href="./" rel="" class="current">contact</a></li></ul>
+									<ul class="toolbarList"><li class="normalListItem"><a href="../index.html" rel="" class="normal">blog</a></li><li class="normalListItem"><a href="../markdown/index.html" rel="" class="normal">about</a></li><li class="currentListItem"><a href="index.php" rel="" class="current">contact</a></li></ul>
 								</nav>
 							</div>
 						</div>
@@ -158,7 +158,7 @@
 					</div>
 					<aside id="aside">
 						<div id="extraContainer10"></div>
-						<div id="blockNav"><ul class="toolbarList"><li class="normalListItem"><a href="../" rel="" class="normal">blog</a></li><li class="normalListItem"><a href="../markdown/" rel="" class="normal">about</a></li><li class="currentListItem"><a href="./" rel="" class="current">contact</a></li></ul></div>
+						<div id="blockNav"><ul class="toolbarList"><li class="normalListItem"><a href="../index.html" rel="" class="normal">blog</a></li><li class="normalListItem"><a href="../markdown/index.html" rel="" class="normal">about</a></li><li class="currentListItem"><a href="index.php" rel="" class="current">contact</a></li></ul></div>
 						<div id="extraContainer11"></div>
 						<div id="sidebarWrapper">
 							<div id="sidebarTitle">
@@ -178,9 +178,9 @@
 				<footer id="footer">
 					<div id="footerContent">
 						<div id="extraContainer15"></div>
-						<div id="breadcrumb"><ul><li>&nbsp;&gt;&nbsp;<a href="../">blog</a></li><li>&nbsp;&gt;&nbsp;<a href="./">contact</a></li></ul></div>
+						<div id="breadcrumb"></div>
 						<div id="extraContainer16"></div>
-						<div id="footerNav"><ul class="toolbarList"><li class="normalListItem"><a href="../" rel="" class="normal">blog</a></li><li class="normalListItem"><a href="../markdown/" rel="" class="normal">about</a></li><li class="currentListItem"><a href="./" rel="" class="current">contact</a></li></ul></div>
+						<div id="footerNav"><ul class="toolbarList"><li class="normalListItem"><a href="../index.html" rel="" class="normal">blog</a></li><li class="normalListItem"><a href="../markdown/index.html" rel="" class="normal">about</a></li><li class="currentListItem"><a href="index.php" rel="" class="current">contact</a></li></ul></div>
 						<div id="extraContainer17"></div>
 						<div id="lastUpdated">06/09/2024<br /></div>
 						<div id="extraContainer18"></div>
@@ -194,10 +194,10 @@
 			</main>
 		</div>
 	</div>
-	<script src="../rw_common/themes/eclipse/javascript.js?rwcache=747343638"></script>
-	<script src="../rw_common/themes/eclipse/scripts/jquery-3.6.0.min.js?rwcache=747343638"></script>
-	<script src="../rw_common/themes/eclipse/scripts/scripts.js?rwcache=747343638"></script>
-	<script src="../rw_common/themes/eclipse/custom.js?rwcache=747343638"></script>
+	<script src="../rw_common/themes/eclipse/javascript.js?rwcache=747343721"></script>
+	<script src="../rw_common/themes/eclipse/scripts/jquery-3.6.0.min.js?rwcache=747343721"></script>
+	<script src="../rw_common/themes/eclipse/scripts/scripts.js?rwcache=747343721"></script>
+	<script src="../rw_common/themes/eclipse/custom.js?rwcache=747343721"></script>
 	
 </body>
 
